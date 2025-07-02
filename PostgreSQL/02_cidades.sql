@@ -1,4 +1,3 @@
- DROP TABLE public.cidades;
 -- create table for Brazilian Cities
 CREATE TABLE cidades (
 	id SERIAL PRIMARY KEY,

@@ -1,4 +1,3 @@
- DROP TABLE public.estados;
 -- create table for Brazilian States
 CREATE TABLE estados (
  	id SERIAL PRIMARY KEY,
