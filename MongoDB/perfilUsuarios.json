@@ -1,0 +1,142 @@
+[
+  {
+    "idUsuario": "1",
+    "preferencias": {
+      "marcas_favoritas": [
+        "Nike",
+        "Apple"
+      ],
+      "categorias_interesse": [
+        "Esportes",
+        "Tecnologia",
+        "Calçados"
+      ]
+    },
+    "dadosDemograficos": {
+      "faixaEtaria": "30-40",
+      "genero": "Masculino"
+    },
+    "listaDesejos": [
+      {
+        "idProduto": 8,
+        "nome": "MacBook Air M3"
+      }
+    ]
+  },
+  {
+    "idUsuario": "4",
+    "preferencias": {
+      "marcas_favoritas": [
+        "Amazon",
+        "Google"
+      ],
+      "categorias_interesse": [
+        "Livros",
+        "Casa Inteligente",
+        "Eletrônicos"
+      ]
+    },
+    "dadosDemograficos": {
+      "faixaEtaria": "20-30",
+      "genero": "Feminino"
+    },
+    "listaDesejos": [
+      {
+        "idProduto": 19,
+        "nome": "Echo Dot (5ª geração)"
+      }
+    ]
+  },
+  {
+    "idUsuario": "7",
+    "preferencias": {
+      "marcas_favoritas": [
+        "Havaianas",
+        "Natura",
+        "Ambev"
+      ],
+      "categorias_interesse": [
+        "Moda",
+        "Cosméticos",
+        "Bebidas"
+      ]
+    },
+    "dadosDemograficos": {
+      "faixaEtaria": "20-30",
+      "genero": "Feminino"
+    },
+    "listaDesejos": [
+      {
+        "idProduto": 24,
+        "nome": "Polpa Desodorante Hidratante para o Corpo Ekos Castanha"
+      },
+      {
+        "idProduto": 13,
+        "nome": "Coca-Cola Original 2L"
+      }
+    ]
+  },
+  {
+    "idUsuario": "9",
+    "preferencias": {
+      "marcas_favoritas": [
+        "Natura"
+      ],
+      "categorias_interesse": [
+        "Beleza e Cuidado Pessoal",
+        "Hidratantes"
+      ]
+    },
+    "dadosDemograficos": {
+      "faixaEtaria": "20-30",
+      "genero": "Feminino"
+    },
+    "listaDesejos": []
+  },
+  {
+    "idUsuario": "18",
+    "preferencias": {
+      "marcas_favoritas": [
+        "Adidas",
+        "Ambev"
+      ],
+      "categorias_interesse": [
+        "Esportes",
+        "Futebol",
+        "Cervejas"
+      ]
+    },
+    "dadosDemograficos": {
+      "faixaEtaria": "30-40",
+      "genero": "Masculino"
+    },
+    "listaDesejos": [
+      {
+        "idProduto": 4,
+        "nome": "Tênis Adidas Superstar"
+      }
+    ]
+  },
+  {
+    "idUsuario": "26",
+    "preferencias": {
+      "marcas_favoritas": [
+        "Itaú Unibanco",
+        "Bradesco"
+      ],
+      "categorias_interesse": [
+        "Serviços Financeiros"
+      ]
+    },
+    "dadosDemograficos": {
+      "faixaEtaria": "20-30",
+      "genero": "Feminino"
+    },
+    "listaDesejos": [
+      {
+        "idProduto": 32,
+        "nome": "Consórcio de Imóvel"
+      }
+    ]
+  }
+]

@@ -1,0 +1,516 @@
+[
+  {
+    "idUsuario": "7",
+    "cliente": {
+      "nome": "Alice Rodrigues",
+      "endereco": "Quadra SQS 308 Bloco K, 308, CEP 70355-110",
+      "documento": "666.777.888-99"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 26,
+        "nome": "Havaianas Slim",
+        "descricao": "Modelo com tiras mais finas e delicadas.",
+        "valor": 49.99,
+        "valorPago": 49.99,
+        "quantidade": 2
+      },
+      {
+        "idProduto": 25,
+        "nome": "Havaianas Top",
+        "descricao": "O modelo clássico e democrático da Havaianas.",
+        "valor": 39.99,
+        "valorPago": 35.99,
+        "quantidade": 1
+      }
+    ],
+    "valorTotal": 135.97,
+    "dataPedido": {
+      "$date": "2025-06-15T18:45:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "Cartão de Crédito",
+      "status": "Aprovado",
+      "dataPagamento": {
+        "$date": "2025-06-15T18:45:15.000Z"
+      }
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-06-15T18:45:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Pagamento Aprovado",
+        "dataRealizacao": {
+          "$date": "2025-06-15T18:45:15.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Processando",
+        "dataRealizacao": {
+          "$date": "2025-06-16T09:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Enviado",
+        "dataRealizacao": {
+          "$date": "2025-06-16T17:30:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Entregue",
+        "dataRealizacao": {
+          "$date": "2025-06-20T14:00:00.000Z"
+        }
+      }
+    ],
+    "status": "Entregue"
+  },
+  {
+    "idUsuario": "10",
+    "cliente": {
+      "nome": "Theo Gomes",
+      "endereco": "Rua da Moeda, 50, 50030-040",
+      "documento": "999.000.111-22"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 7,
+        "nome": "iPhone 15 Pro",
+        "descricao": "Smartphone com chip A17 Pro...",
+        "valor": 9299.00,
+        "valorPago": 9299.00,
+        "quantidade": 1
+      }
+    ],
+    "valorTotal": 9299.00,
+    "dataPedido": {
+      "$date": "2025-07-01T11:20:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "PIX",
+      "status": "Aprovado",
+      "dataPagamento": {
+        "$date": "2025-07-01T11:20:10.000Z"
+      }
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-07-01T11:20:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Pagamento Aprovado",
+        "dataRealizacao": {
+          "$date": "2025-07-01T11:20:10.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Processando",
+        "dataRealizacao": {
+          "$date": "2025-07-01T12:00:00.000Z"
+        }
+      }
+    ],
+    "status": "Processando"
+  },
+  {
+    "idUsuario": "18",
+    "cliente": {
+      "nome": "Lucas Gomes",
+      "endereco": "Rua do Sol, 333, CEP 53020-030",
+      "documento": "789.012.345-67"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 5,
+        "nome": "Camisa de Time Flamengo I",
+        "descricao": "Camisa oficial do time de futebol...",
+        "valor": 349.99,
+        "valorPago": 349.99,
+        "quantidade": 1
+      },
+      {
+        "idProduto": 34,
+        "nome": "Cerveja Brahma Duplo Malte 600ml",
+        "descricao": "Garrafa de cerveja com sabor mais encorpado.",
+        "valor": 8.50,
+        "valorPago": 8.50,
+        "quantidade": 6
+      }
+    ],
+    "valorTotal": 400.99,
+    "dataPedido": {
+      "$date": "2025-05-30T20:00:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "Boleto",
+      "status": "Pendente",
+      "dataPagamento": null
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-05-30T20:00:00.000Z"
+        }
+      }
+    ],
+    "status": "Aguardando Pagamento"
+  },
+  {
+    "idUsuario": "4",
+    "cliente": {
+      "nome": "Sophia Santos",
+      "endereco": "Rua das Araucárias, 415, CEP 80010-010",
+      "documento": "222.333.444-55"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 20,
+        "nome": "Kindle Paperwhite (16 GB)",
+        "descricao": "Leitor de livros digitais...",
+        "valor": 799.00,
+        "valorPago": 799.00,
+        "quantidade": 1
+      }
+    ],
+    "valorTotal": 799.00,
+    "dataPedido": {
+      "$date": "2025-06-28T13:00:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "PIX",
+      "status": "Aprovado",
+      "dataPagamento": {
+        "$date": "2025-06-28T13:00:05.000Z"
+      }
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-06-28T13:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Pagamento Aprovado",
+        "dataRealizacao": {
+          "$date": "2025-06-28T13:00:05.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Processando",
+        "dataRealizacao": {
+          "$date": "2025-06-28T14:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Enviado",
+        "dataRealizacao": {
+          "$date": "2025-06-29T10:00:00.000Z"
+        }
+      }
+    ],
+    "status": "Enviado"
+  },
+  {
+    "idUsuario": "1",
+    "cliente": {
+      "nome": "Miguel Oliveira",
+      "endereco": "Avenida Ibirapuera, 1500, CEP 01310-200",
+      "documento": "111.222.333-44"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 1,
+        "nome": "Tênis Nike Air Max 90",
+        "descricao": "Clássico tênis da Nike...",
+        "valor": 799.99,
+        "valorPago": 0,
+        "quantidade": 1
+      }
+    ],
+    "valorTotal": 799.99,
+    "dataPedido": {
+      "$date": "2025-06-10T09:00:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "Boleto",
+      "status": "Recusado",
+      "dataPagamento": null
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-06-10T09:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Cancelado",
+        "dataRealizacao": {
+          "$date": "2025-06-12T10:00:00.000Z"
+        }
+      }
+    ],
+    "status": "Cancelado"
+  },
+  {
+    "idUsuario": "9",
+    "cliente": {
+      "nome": "Laura Pereira",
+      "endereco": "Rua da Moeda, 50, CEP 50030-040",
+      "documento": "888.999.000-11"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 24,
+        "nome": "Polpa Desodorante Hidratante para o Corpo Ekos Castanha",
+        "descricao": "Hidratante corporal com óleo de castanha...",
+        "valor": 89.90,
+        "valorPago": 89.90,
+        "quantidade": 3
+      }
+    ],
+    "valorTotal": 269.70,
+    "dataPedido": {
+      "$date": "2025-04-20T16:00:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "Cartão de Débito",
+      "status": "Aprovado",
+      "dataPagamento": {
+        "$date": "2025-04-20T16:00:10.000Z"
+      }
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-04-20T16:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Pagamento Aprovado",
+        "dataRealizacao": {
+          "$date": "2025-04-20T16:00:10.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Entregue",
+        "dataRealizacao": {
+          "$date": "2025-04-25T12:00:00.000Z"
+        }
+      }
+    ],
+    "status": "Entregue"
+  },
+  {
+    "idUsuario": "20",
+    "cliente": {
+      "nome": "Lucca Rocha",
+      "endereco": "Avenida Brasil, 888, CEP 28941-042",
+      "documento": "901.234.567-89"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 11,
+        "nome": "Smart TV 55\" Crystal UHD 4K",
+        "descricao": "Televisão com resolução 4K...",
+        "valor": 3299.00,
+        "valorPago": 3299.00,
+        "quantidade": 1
+      },
+      {
+        "idProduto": 19,
+        "nome": "Echo Dot (5ª geração)",
+        "descricao": "Smart speaker com Alexa...",
+        "valor": 429.00,
+        "valorPago": 400.00,
+        "quantidade": 2
+      }
+    ],
+    "valorTotal": 4157.00,
+    "dataPedido": {
+      "$date": "2025-07-02T10:00:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "Cartão de Crédito",
+      "status": "Aprovado",
+      "dataPagamento": {
+        "$date": "2025-07-02T10:00:20.000Z"
+      }
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-07-02T10:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Pagamento Aprovado",
+        "dataRealizacao": {
+          "$date": "2025-07-02T10:00:20.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Processando",
+        "dataRealizacao": {
+          "$date": "2025-07-02T11:00:00.000Z"
+        }
+      }
+    ],
+    "status": "Processando"
+  },
+  {
+    "idUsuario": "26",
+    "cliente": {
+      "nome": "Giovanna Ribeiro",
+      "endereco": "Avenida Epitácio Pessoa, 909, CEP 58039-000",
+      "documento": "567.890.123-46"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 30,
+        "nome": "Seguro de Vida Itaú",
+        "descricao": "Plano de seguro de vida com diversas coberturas.",
+        "valor": 600.00,
+        "valorPago": 600.00,
+        "quantidade": 1
+      }
+    ],
+    "valorTotal": 600.00,
+    "dataPedido": {
+      "$date": "2025-01-10T15:00:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "Débito Automático",
+      "status": "Aprovado",
+      "dataPagamento": {
+        "$date": "2025-01-10T15:00:00.000Z"
+      }
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-01-10T15:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Pagamento Aprovado",
+        "dataRealizacao": {
+          "$date": "2025-01-10T15:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Finalizado",
+        "dataRealizacao": {
+          "$date": "2025-01-10T15:01:00.000Z"
+        }
+      }
+    ],
+    "status": "Finalizado"
+  },
+  {
+    "idUsuario": "12",
+    "cliente": {
+      "nome": "Gael Martins",
+      "endereco": "Rua do Imperador, 333, CEP 25620-002",
+      "documento": "123.456.789-10"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 16,
+        "nome": "Toyota Hilux SRX Plus",
+        "descricao": "Picape robusta com motor a diesel...",
+        "valor": 334890.00,
+        "valorPago": 50000.00,
+        "quantidade": 1
+      }
+    ],
+    "valorTotal": 334890.00,
+    "dataPedido": {
+      "$date": "2025-03-03T18:00:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "Financiamento",
+      "status": "Parcialmente Pago",
+      "dataPagamento": {
+        "$date": "2025-03-05T10:00:00.000Z"
+      }
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-03-03T18:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Pagamento Aprovado",
+        "dataRealizacao": {
+          "$date": "2025-03-05T10:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Aguardando Retirada",
+        "dataRealizacao": {
+          "$date": "2025-03-10T14:00:00.000Z"
+        }
+      }
+    ],
+    "status": "Aguardando Retirada"
+  },
+  {
+    "idUsuario": "7",
+    "cliente": {
+      "nome": "Alice Rodrigues",
+      "endereco": "Rua das Orquídeas, 25, CEP 20040-030",
+      "documento": "666.777.888-99"
+    },
+    "itensPedido": [
+      {
+        "idProduto": 13,
+        "nome": "Coca-Cola Original 2L",
+        "descricao": "Refrigerante de cola, garrafa de 2 litros.",
+        "valor": 9.99,
+        "valorPago": 9.99,
+        "quantidade": 10
+      }
+    ],
+    "valorTotal": 99.90,
+    "dataPedido": {
+      "$date": "2025-07-03T19:00:00.000Z"
+    },
+    "pagamento": {
+      "formaPagamento": "Dinheiro",
+      "status": "Aprovado",
+      "dataPagamento": {
+        "$date": "2025-07-03T19:00:00.000Z"
+      }
+    },
+    "historicoStatus": [
+      {
+        "tipoStatus": "Criado",
+        "dataRealizacao": {
+          "$date": "2025-07-03T19:00:00.000Z"
+        }
+      },
+      {
+        "tipoStatus": "Entregue",
+        "dataRealizacao": {
+          "$date": "2025-07-03T19:30:00.000Z"
+        }
+      }
+    ],
+    "status": "Entregue"
+  }
+]

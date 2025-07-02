@@ -1,0 +1,259 @@
+[
+  {
+    "idProduto": 1,
+    "categorias": [
+      { "nome": "Moda", "valor": "moda" },
+      { "nome": "Calçados", "valor": "calcados" },
+      { "nome": "Esportes", "valor": "esportes" }
+    ]
+  },
+  {
+    "idProduto": 2,
+    "categorias": [
+      { "nome": "Moda", "valor": "moda" },
+      { "nome": "Vestuário", "valor": "vestuario" },
+      { "nome": "Esportes", "valor": "esportes" }
+    ]
+  },
+  {
+    "idProduto": 3,
+    "categorias": [
+      { "nome": "Moda", "valor": "moda" },
+      { "nome": "Vestuário", "valor": "vestuario" },
+      { "nome": "Esportes", "valor": "esportes" }
+    ]
+  },
+  {
+    "idProduto": 4,
+    "categorias": [
+      { "nome": "Moda", "valor": "moda" },
+      { "nome": "Calçados", "valor": "calcados" }
+    ]
+  },
+  {
+    "idProduto": 5,
+    "categorias": [
+      { "nome": "Esportes", "valor": "esportes" },
+      { "nome": "Futebol", "valor": "futebol" },
+      { "nome": "Vestuário", "valor": "vestuario" }
+    ]
+  },
+  {
+    "idProduto": 6,
+    "categorias": [
+      { "nome": "Moda", "valor": "moda" },
+      { "nome": "Agasalhos", "valor": "agasalhos" }
+    ]
+  },
+  {
+    "idProduto": 7,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Eletrônicos", "valor": "eletronicos" },
+      { "nome": "Smartphones", "valor": "smartphones" }
+    ]
+  },
+  {
+    "idProduto": 8,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Eletrônicos", "valor": "eletronicos" },
+      { "nome": "Notebooks", "valor": "notebooks" }
+    ]
+  },
+  {
+    "idProduto": 9,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Eletrônicos", "valor": "eletronicos" },
+      { "nome": "Wearables", "valor": "wearables" }
+    ]
+  },
+  {
+    "idProduto": 10,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Eletrônicos", "valor": "eletronicos" },
+      { "nome": "Smartphones", "valor": "smartphones" }
+    ]
+  },
+  {
+    "idProduto": 11,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Eletrônicos", "valor": "eletronicos" },
+      { "nome": "TV e Vídeo", "valor": "tv-video" }
+    ]
+  },
+  {
+    "idProduto": 12,
+    "categorias": [
+      { "nome": "Eletrodomésticos", "valor": "eletrodomesticos" },
+      { "nome": "Cozinha", "valor": "cozinha" }
+    ]
+  },
+  {
+    "idProduto": 13,
+    "categorias": [
+      { "nome": "Alimentos e Bebidas", "valor": "alimentos-bebidas" },
+      { "nome": "Refrigerantes", "valor": "refrigerantes" }
+    ]
+  },
+  {
+    "idProduto": 14,
+    "categorias": [
+      { "nome": "Alimentos e Bebidas", "valor": "alimentos-bebidas" },
+      { "nome": "Refrigerantes", "valor": "refrigerantes" }
+    ]
+  },
+  {
+    "idProduto": 15,
+    "categorias": [
+      { "nome": "Automotivo", "valor": "automotivo" },
+      { "nome": "Carros", "valor": "carros" }
+    ]
+  },
+  {
+    "idProduto": 16,
+    "categorias": [
+      { "nome": "Automotivo", "valor": "automotivo" },
+      { "nome": "Carros", "valor": "carros" }
+    ]
+  },
+  {
+    "idProduto": 17,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Software", "valor": "software" }
+    ]
+  },
+  {
+    "idProduto": 18,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Games", "valor": "games" },
+      { "nome": "Acessórios", "valor": "acessorios" }
+    ]
+  },
+  {
+    "idProduto": 19,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Casa Inteligente", "valor": "casa-inteligente" },
+      { "nome": "Eletrônicos", "valor": "eletronicos" }
+    ]
+  },
+  {
+    "idProduto": 20,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Livros e eBooks", "valor": "livros" },
+      { "nome": "Eletrônicos", "valor": "eletronicos" }
+    ]
+  },
+  {
+    "idProduto": 21,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Casa Inteligente", "valor": "casa-inteligente" },
+      { "nome": "Eletrônicos", "valor": "eletronicos" }
+    ]
+  },
+  {
+    "idProduto": 22,
+    "categorias": [
+      { "nome": "Tecnologia", "valor": "tecnologia" },
+      { "nome": "Eletrônicos", "valor": "eletronicos" },
+      { "nome": "Smartphones", "valor": "smartphones" }
+    ]
+  },
+  {
+    "idProduto": 23,
+    "categorias": [
+      { "nome": "Beleza e Cuidado Pessoal", "valor": "beleza" },
+      { "nome": "Perfumaria", "valor": "perfumaria" }
+    ]
+  },
+  {
+    "idProduto": 24,
+    "categorias": [
+      { "nome": "Beleza e Cuidado Pessoal", "valor": "beleza" },
+      { "nome": "Hidratantes", "valor": "hidratantes" }
+    ]
+  },
+  {
+    "idProduto": 25,
+    "categorias": [
+      { "nome": "Moda", "valor": "moda" },
+      { "nome": "Calçados", "valor": "calcados" }
+    ]
+  },
+  {
+    "idProduto": 26,
+    "categorias": [
+      { "nome": "Moda", "valor": "moda" },
+      { "nome": "Calçados", "valor": "calcados" }
+    ]
+  },
+  {
+    "idProduto": 27,
+    "categorias": [
+      { "nome": "Automotivo", "valor": "automotivo" },
+      { "nome": "Combustíveis", "valor": "combustiveis" }
+    ]
+  },
+  {
+    "idProduto": 28,
+    "categorias": [
+      { "nome": "Automotivo", "valor": "automotivo" },
+      { "nome": "Combustíveis", "valor": "combustiveis" }
+    ]
+  },
+  {
+    "idProduto": 29,
+    "categorias": [
+      { "nome": "Serviços Financeiros", "valor": "servicos-financeiros" }
+    ]
+  },
+  {
+    "idProduto": 30,
+    "categorias": [
+      { "nome": "Serviços Financeiros", "valor": "servicos-financeiros" },
+      { "nome": "Seguros", "valor": "seguros" }
+    ]
+  },
+  {
+    "idProduto": 31,
+    "categorias": [
+      { "nome": "Serviços Financeiros", "valor": "servicos-financeiros" }
+    ]
+  },
+  {
+    "idProduto": 32,
+    "categorias": [
+      { "nome": "Serviços Financeiros", "valor": "servicos-financeiros" },
+      { "nome": "Consórcios", "valor": "consorcios" }
+    ]
+  },
+  {
+    "idProduto": 33,
+    "categorias": [
+      { "nome": "Alimentos e Bebidas", "valor": "alimentos-bebidas" },
+      { "nome": "Cervejas", "valor": "cervejas" }
+    ]
+  },
+  {
+    "idProduto": 34,
+    "categorias": [
+      { "nome": "Alimentos e Bebidas", "valor": "alimentos-bebidas" },
+      { "nome": "Cervejas", "valor": "cervejas" }
+    ]
+  },
+  {
+    "idProduto": 35,
+    "categorias": [
+      { "nome": "Alimentos e Bebidas", "valor": "alimentos-bebidas" },
+      { "nome": "Refrigerantes", "valor": "refrigerantes" }
+    ]
+  }
+]
