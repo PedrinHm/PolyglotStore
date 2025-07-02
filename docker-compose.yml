@@ -1,0 +1,106 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Service
+  postgres:
+    image: postgres:16-alpine 
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: datadrivenstore 
+      POSTGRES_USER: user 
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432" 
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./PostgreSQL:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d datadrivenstore"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # MongoDB Service
+  mongodb:
+    image: mongo:7.0 
+    container_name: mongodb_db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user 
+      MONGO_INITDB_ROOT_PASSWORD: password 
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db 
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Redis Service
+  redis:
+    image: redis:7.2-alpine 
+    container_name: redis_cache
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data 
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  # ClickHouse Service
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.4
+    container_name: clickhouse_db
+    ports:
+      - "8123:8123" 
+      - "9000:9000" 
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse 
+      - clickhouse_logs:/var/log/clickhouse-server 
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider localhost:8123/ping || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Neo4j Service
+  neo4j:
+    image: neo4j:5.20 
+    container_name: neo4j_db
+    environment:
+      NEO4J_AUTH: neo4j/password 
+      NEO4J_PLUGINS: 'apoc,graph-data-science' 
+    ports:
+      - "7474:7474" 
+      - "7687:7687" 
+    volumes:
+      - neo4j_data:/data 
+      - neo4j_plugins:/plugins 
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+# Volumes para persistência de dados
+volumes:
+  postgres_data:
+  mongodb_data:
+  redis_data:
+  clickhouse_data:
+  clickhouse_logs:
+  neo4j_data:
+  neo4j_plugins:
