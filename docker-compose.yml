@@ -31,7 +31,8 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongodb_data:/data/db 
+      - mongodb_data:/data/db
+      - ./MongoDB:/docker-entrypoint-initdb.d  
     healthcheck:
       test: echo 'db.runCommand("ping").ok' | mongosh --quiet
       interval: 10s
