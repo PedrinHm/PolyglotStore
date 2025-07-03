@@ -1,11 +1,9 @@
--- create table for Brazilian States
 CREATE TABLE estados (
  	id SERIAL PRIMARY KEY,
 	uf CHAR(2) NOT NULL,
   	nome VARCHAR(50) NOT NULL
 );
 
--- insert ufs
 INSERT INTO estados (uf, nome) VALUES
 	 ('AC','Acre'),
 	 ('AL','Alagoas'),
