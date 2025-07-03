@@ -1,4 +1,3 @@
--- create table for Brazilian Cities
 CREATE TABLE cidades (
 	id SERIAL PRIMARY KEY,
 	nome varchar(100) NOT NULL,
@@ -7,7 +6,6 @@ CREATE TABLE cidades (
 	CONSTRAINT cidade_estado_id_fkey FOREIGN KEY (estado_id) REFERENCES public.estados(id) ON DELETE CASCADE
 );
 
--- insert Brazilian cities
 INSERT INTO cidades (nome, uf) VALUES
 	 ('Alta Floresta D´oeste','RO'),
 	 ('Ariquemes','RO'),
