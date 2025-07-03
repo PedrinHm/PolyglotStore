@@ -49,13 +49,12 @@ EXISTS cache:usuario:102
 ### Operações Gerais de Cache
 
 ```redis
-# Listar todas as chaves de cache (use com cuidado em produção)
 KEYS cache:*
 
 # Contar número de produtos em cache
 KEYS cache:produto:* | COUNT
 
-# Listar apenas as chaves que expiram em menos de 30 minutos (1800 segundos)
+# Listar apenas as chaves que expiram em menos de 30 minutos
 # Este comando requer script Lua
 EVAL "local keys = redis.call('KEYS', ARGV[1]); local result = {}; local count = 0; for i, key in ipairs(keys) do local ttl = redis.call('TTL', key); if ttl < tonumber(ARGV[2]) and ttl > 0 then count = count + 1; result[count] = key end end return result;" 0 "cache:*" "1800"
 ```
@@ -140,33 +139,3 @@ DEL carrinho:103
 # Renovar o tempo de expiração de um carrinho (por mais 24 horas)
 EXPIRE carrinho:102 86400
 ```
-
----
-
-## 📊 4. Métricas e Monitoramento
-
-```redis
-# Estatísticas gerais do Redis
-INFO
-
-# Estatísticas de memória
-INFO memory
-
-# Estatísticas de clientes
-INFO clients
-
-# Contagem de chaves no banco de dados atual
-DBSIZE
-
-# Monitorar comandos em tempo real (use CTRL+C para sair)
-MONITOR
-
-# Verificar latência
-PING
-
-# Estatísticas de performance
-INFO stats
-```
-
----
-
