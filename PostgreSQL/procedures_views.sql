@@ -328,3 +328,140 @@ BEGIN
     RETURN pedido_json;
 END;
 $$;
+
+-- Detalhes Completos dos Produtos
+CREATE OR REPLACE VIEW public.view_produtos_detalhados AS
+SELECT
+    p.nome AS produto_nome,
+    p.descricao AS produto_descricao,
+    p.valor AS produto_valor,
+    m.nome AS marca_nome,
+    ep.quantidade AS quantidade_estoque,
+    (p.valor * ep.quantidade) AS valor_total_estoque,
+    p.criado_em,
+    p.atualizado_em
+FROM
+    public.produtos p
+JOIN
+    public.marcas m ON p.marcas_id = m.id
+JOIN
+    public.estoqueprodutos ep ON p.id = ep.produtos_id
+WHERE
+    p.deletado = FALSE AND m.deletado = FALSE;
+
+-- Detalhes dos Clientes com Endereço Principal
+create or replace
+view public.view_clientes_detalhados as
+select
+	u.nome as cliente_nome,
+	u.email,
+	u.cpf,
+	c.telefone,
+	c.data_nascimento,
+	ec.rua,
+	ec.cep,
+	cid.nome as cidade,
+	est.uf as estado_uf,
+	est.nome as estado_nome,
+	u.criado_em
+from
+	public.usuarios u
+join
+    public.clientes c on
+	u.id = c.usuarios_id
+left join
+    public.enderecoclientes ec on
+	c.id = ec.clientes_id
+	and ec.endereco_principal = true
+	and ec.deletado = false
+left join
+    public.cidades cid on
+	ec.cidade_id = cid.id
+left join
+    public.estados est on
+	cid.estado_id = est.id
+where
+	u.deletado = false
+	and u.administrador = false;
+
+-- Relatório Gerencial de Marcas
+create or replace
+view public.view_relatorio_marcas as
+select
+	m.nome as marca_nome,
+	COUNT(p.id) as quantidade_produtos_ativos,
+	SUM(ep.quantidade) as total_unidades_em_estoque,
+	SUM(p.valor * ep.quantidade) as valor_total_inventario
+from
+	public.marcas m
+left join
+    public.produtos p on
+	m.id = p.marcas_id
+	and p.deletado = false
+left join
+    public.estoqueprodutos ep on
+	p.id = ep.produtos_id
+where
+	m.deletado = false
+group by
+	m.id,
+	m.nome
+order by
+	valor_total_inventario desc;
+
+--Relatório de Clientes por Estado
+create or replace
+view public.view_relatorio_clientes_por_estado as
+select
+	est.nome as estado,
+	est.uf,
+	COUNT(c.id) as quantidade_clientes
+from
+	public.clientes c
+join
+    public.enderecoclientes ec on
+	c.id = ec.clientes_id
+	and ec.endereco_principal = true
+	and ec.deletado = false
+join
+    public.cidades cid on
+	ec.cidade_id = cid.id
+join
+    public.estados est on
+	cid.estado_id = est.id
+where
+	c.deletado = false
+group by
+	est.nome,
+	est.uf
+order by
+	quantidade_clientes desc;
+
+-- Relatório de Clientes por Cidade
+create or replace
+view public.view_relatorio_clientes_por_cidade as
+select
+	est.nome as estado,
+	cid.nome as cidade,
+	COUNT(c.id) as quantidade_clientes
+from
+	public.clientes c
+join
+    public.enderecoclientes ec on
+	c.id = ec.clientes_id
+	and ec.endereco_principal = true
+	and ec.deletado = false
+join
+    public.cidades cid on
+	ec.cidade_id = cid.id
+join
+    public.estados est on
+	cid.estado_id = est.id
+where
+	c.deletado = false
+group by
+	est.nome,
+	cid.nome
+order by
+	estado,
+	quantidade_clientes desc;
