@@ -1,0 +1,82 @@
+{
+	"meta":
+	[
+		{
+			"name": "idOperacao",
+			"type": "UUID"
+		},
+		{
+			"name": "tipoOperacao",
+			"type": "Enum8('SELECT' = 1, 'INSERT' = 2, 'UPDATE' = 3, 'DELETE' = 4)"
+		},
+		{
+			"name": "queryOperacao",
+			"type": "String"
+		},
+		{
+			"name": "tempoOperacao",
+			"type": "Float32"
+		},
+		{
+			"name": "idUsuario",
+			"type": "UInt64"
+		},
+		{
+			"name": "dataRealizacao",
+			"type": "DateTime"
+		},
+		{
+			"name": "dataDia",
+			"type": "Date"
+		}
+	],
+
+	"data":
+	[
+		{
+			"idOperacao": "b159afdf-d1f7-47dc-b351-fdf8b2c712e3",
+			"tipoOperacao": "UPDATE",
+			"queryOperacao": "UPDATE pedidos SET status = 'enviado' WHERE id = 1023",
+			"tempoOperacao": 30.1,
+			"idUsuario": "1003",
+			"dataRealizacao": "2025-07-01 01:45:09",
+			"dataDia": "2025-07-01"
+		},
+		{
+			"idOperacao": "63334968-979f-4ab2-950c-dccc0d03540e",
+			"tipoOperacao": "INSERT",
+			"queryOperacao": "INSERT INTO produtos (nome, preco) VALUES ('Notebook', 3499.90)",
+			"tempoOperacao": 45.8,
+			"idUsuario": "1002",
+			"dataRealizacao": "2025-07-02 01:45:09",
+			"dataDia": "2025-07-02"
+		},
+		{
+			"idOperacao": "ede2c88f-eeac-4e8b-9f0a-446ac9dd7b5a",
+			"tipoOperacao": "SELECT",
+			"queryOperacao": "SELECT * FROM usuarios WHERE ativo = 1",
+			"tempoOperacao": 12.5,
+			"idUsuario": "1001",
+			"dataRealizacao": "2025-07-03 01:45:09",
+			"dataDia": "2025-07-03"
+		},
+		{
+			"idOperacao": "4f87324d-36d1-41a9-b123-0b4792136dfe",
+			"tipoOperacao": "DELETE",
+			"queryOperacao": "DELETE FROM logs WHERE data < '2024-01-01'",
+			"tempoOperacao": 78.3,
+			"idUsuario": "1004",
+			"dataRealizacao": "2025-06-30 01:45:09",
+			"dataDia": "2025-06-30"
+		}
+	],
+
+	"rows": 4,
+
+	"statistics":
+	{
+		"elapsed": 0.001919624,
+		"rows_read": 4,
+		"bytes_read": 372
+	}
+}
