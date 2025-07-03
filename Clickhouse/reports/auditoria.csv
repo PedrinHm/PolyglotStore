@@ -1,0 +1,4 @@
+"b159afdf-d1f7-47dc-b351-fdf8b2c712e3","UPDATE","UPDATE pedidos SET status = 'enviado' WHERE id = 1023",30.1,1003,"2025-07-01 01:45:09","2025-07-01"
+"63334968-979f-4ab2-950c-dccc0d03540e","INSERT","INSERT INTO produtos (nome, preco) VALUES ('Notebook', 3499.90)",45.8,1002,"2025-07-02 01:45:09","2025-07-02"
+"ede2c88f-eeac-4e8b-9f0a-446ac9dd7b5a","SELECT","SELECT * FROM usuarios WHERE ativo = 1",12.5,1001,"2025-07-03 01:45:09","2025-07-03"
+"4f87324d-36d1-41a9-b123-0b4792136dfe","DELETE","DELETE FROM logs WHERE data < '2024-01-01'",78.3,1004,"2025-06-30 01:45:09","2025-06-30"
