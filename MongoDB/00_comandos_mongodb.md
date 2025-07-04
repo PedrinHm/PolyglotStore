@@ -11,7 +11,7 @@ O banco de dados MongoDB é configurado e inicializado via Docker Compose. Pode-
 Acesse a shell interativa do MongoDB dentro do contêiner com o seguinte comando:
 
 ```bash
-docker-compose exec mongodb_db mongosh -u user -p password --authenticationDatabase admin
+mongosh -u user -p password --authenticationDatabase admin
 ```
 
 Uma vez conectado, selecione a base de dados do projeto:
